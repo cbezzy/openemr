@@ -78,6 +78,10 @@
 
  // seconds per time slot
  $slotsecs = $GLOBALS['calendar_interval'] * 60;
+ 
+ if(intval($_REQUEST['evdur']) == 0){
+  $_REQUEST['evdur'] = $GLOBALS['calendar_interval'];
+ }
 
  $catslots = 1;
  if ($input_catid) {
