@@ -174,7 +174,7 @@ else {
 
 <?php if ($mode == "simple") { // show the per patient rule setting option ?>
   <ul class="tabNav">
-    <li class='current'><a href='#'><?php echo htmlspecialchars( xl('Main'), ENT_NOQUOTES); ?></a></li>
+    <li class='current'><a href='#/'><?php echo htmlspecialchars( xl('Main'), ENT_NOQUOTES); ?></a></li>
     <li ><a href='#' onclick='top.restoreSession()'><?php echo htmlspecialchars( xl('Rules'), ENT_NOQUOTES); ?></a></li>
   </ul>
   <div class="tabContainer">
