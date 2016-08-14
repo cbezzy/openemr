@@ -147,6 +147,8 @@ $GLOBALS['webroot'] = $web_root;
 // Static assets directory, relative to the webserver root.
 // (it is very likely that this path will be changed in the future))
 $GLOBALS['assets_static_relative'] = "$web_root/public/assets";
+// Static assets directory, absolute folder.
+$GLOBALS['assets_static_absolute'] = "$webserver_root/public/assets";
 //Composer vendor directory, absolute to the webserver root.
 $GLOBALS['vendor_dir'] = "$webserver_root/vendor";
 

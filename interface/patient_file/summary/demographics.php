@@ -173,16 +173,16 @@ if ($result3['provider']) {   // Use provider in case there is an ins record w/ 
 <head>
 <?php html_header_show();?>
 <link rel="stylesheet" href="<?php echo $css_header;?>" type="text/css">
-<link rel="stylesheet" type="text/css" href="../../../library/js/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
-<style type="text/css">@import url(../../../library/dynarch_calendar.css);</style>
-<script type="text/javascript" src="../../../library/textformat.js"></script>
-<script type="text/javascript" src="../../../library/dynarch_calendar.js"></script>
-<?php include_once("{$GLOBALS['srcdir']}/dynarch_calendar_en.inc.php"); ?>
-<script type="text/javascript" src="../../../library/dynarch_calendar_setup.js"></script>
-<script type="text/javascript" src="../../../library/dialog.js"></script>
-<script type="text/javascript" src="../../../library/js/jquery-1.6.4.min.js"></script>
-<script type="text/javascript" src="../../../library/js/common.js"></script>
-<script type="text/javascript" src="../../../library/js/fancybox/jquery.fancybox-1.2.6.js"></script>
+<link rel="stylesheet" type="text/css" href="<?= $GLOBALS['assets_static_relative']; ?>/jquery-fancybox-1-2-6/index.css" media="screen" />
+<style type="text/css">@import url('<?= $GLOBALS['assets_static_relative']; ?>/dynarch-calendar/index.css');</style>
+<script type="text/javascript" src="<?= $GLOBALS['assets_static_relative']; ?>/textformat/index.js"></script>
+<script type="text/javascript" src="<?= $GLOBALS['assets_static_relative']; ?>/dynarch-calendar/index.js"></script>
+<?php include_once($GLOBALS['assets_static_absolute']."/dynarch-calendar/dynarch_calendar_en.inc.php"); ?>
+<script type="text/javascript" src="<?= $GLOBALS['assets_static_relative']; ?>/dynarch-calendar/setup.js"></script>
+<script type="text/javascript" src="<?= $GLOBALS['assets_static_relative']; ?>/dialog/index.js"></script>
+<script type="text/javascript" src="<?= $GLOBALS['assets_static_relative']; ?>/jquery-min-1-6-4/index.js"></script>
+<script type="text/javascript" src="<?= $GLOBALS['assets_static_relative']; ?>/common-js/index.js"></script>
+<script type="text/javascript" src="<?= $GLOBALS['assets_static_relative']; ?>/jquery-fancybox-1-2-6/index.js"></script>
 <script type="text/javascript" language="JavaScript">
 
  var mypcc = '<?php echo htmlspecialchars($GLOBALS['phone_country_code'],ENT_QUOTES); ?>';
